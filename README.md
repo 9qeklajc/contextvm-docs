@@ -110,19 +110,6 @@ sequenceDiagram
     Note right of Client: Client receives service and change
 ```
 
-### Server-Side Complexity for Variable Pricing:
-
-**⚠️ Critical Implementation Challenge:** Variable pricing significantly increases server complexity because the server must:
-
-- **Pre-Process Analysis:** Parse and analyze request parameters without full execution
-- **Resource Estimation:** Predict computational cost, memory usage, processing time, and other resource requirements
-- **Cost Calculation Logic:** Implement fair and accurate pricing algorithms that correlate resource usage with payment amounts
-- **State Management:** Handle the request evaluation phase separately from the actual processing phase
-- **Error Handling:** Manage scenarios where initial cost estimates prove inaccurate during actual processing
-- **Security Considerations:** Prevent abuse where clients submit complex requests just to get cost estimates without paying
-
-This complexity means servers need sophisticated request analysis capabilities and may require machine learning models or heuristic algorithms to accurately predict resource usage before processing begins.
-
 ## Benefits and Trade-offs
 
 | Aspect                | Fixed Price Flow                   | Variable Price Flow                      | Maximum Cost with Refund Flow                 |
