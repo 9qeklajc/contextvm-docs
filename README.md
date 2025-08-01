@@ -1,4 +1,4 @@
-# Client Behavior Flows: Fixed vs Variable Pricing
+# Fixed vs Variable Pricing
 
 This document describes the two primary client behavior patterns when interacting with servers that offer services with different pricing models.
 
